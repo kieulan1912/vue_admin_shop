@@ -134,7 +134,7 @@
     <a-select
       ref="select"
       v-model:value="value1"
-      style="width: 194px"
+      style="width: 190px"
       class="ml-2"
       @focus="focus"
       @change="handleChange"
@@ -145,7 +145,7 @@
     <a-select
       ref="select"
       v-model:value="value1"
-      style="width: 194px"
+      style="width: 190px"
       class="ml-2"
       @focus="focus"
       @change="handleChange"
@@ -156,7 +156,7 @@
     <a-select
       ref="select"
       v-model:value="value1"
-      style="width: 194px"
+      style="width: 190px"
       class="ml-2"
       @focus="focus"
       @change="handleChange"
@@ -167,7 +167,7 @@
     <a-select
       ref="select"
       v-model:value="value1"
-      style="width: 194px"
+      style="width: 190px"
       class="ml-2"
       @focus="focus"
       @change="handleChange"
@@ -178,7 +178,7 @@
     <a-select
       ref="select"
       v-model:value="value1"
-      style="width: 194px"
+      style="width: 190px"
       class="ml-2"
       @focus="focus"
       @change="handleChange"
@@ -188,12 +188,33 @@
     </a-select>
   </a-row>
   <br />
+  <a-row>
+    <a-col :span="8" style="text-align: left"
+      ><span>Kết quả tìm kiếm: 120 shop</span></a-col
+    >
+    <a-col :span="12" :offset="4" class="left-content">
+      <a-row>
+        <span style="margin-top: 5px">Xóa bộ lọc</span>
+        <div style="width: 125px" class="ml-2">
+          <a-button block class="btn-primary" style="float: right">
+            Thu gọn bộ lọc
+          </a-button>
+        </div>
+        <div style="width: 125px" class="ml-2">
+          <a-button block class="btn-primary-bg" style="float: right">
+            Tìm kiếm
+          </a-button>
+        </div>
+      </a-row>
+    </a-col>
+  </a-row>
+  <br />
   <a-table
     :columns="columns"
     :data-source="data"
     bordered
     :pagination="{ pageSize: 10 }"
-    :scroll="{ y: 550 }"
+    :scroll="{ y: 520 }"
   >
     <a-table-column
       key="nameColumn"
@@ -346,7 +367,7 @@
             />
           </a-row>
           <br />
-          <a-row class="btn-save">
+          <a-row class="left-content">
             <a-button class="btn-primary">Lưu</a-button>
           </a-row>
         </a-column>

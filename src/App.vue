@@ -132,6 +132,12 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+.ant-table.ant-table-bordered > .ant-table-container {
+  border-left: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
 .ant-table-column-title {
   font-weight: bold;
 }
@@ -152,6 +158,12 @@ export default {
   border-radius: 5px;
 }
 
+.btn-primary-bg {
+  background-color: #00904a;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .content__on__top {
   position: absolute;
   top: 10px;
@@ -163,7 +175,8 @@ export default {
   height: 270px;
 }
 
-.btn-save {
+.left-content {
+  align-content: center;
   display: flex;
   row-gap: 0px;
   justify-content: end;
